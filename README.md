@@ -9,4 +9,4 @@ My personal website
 * Responsive Design
 
 ## Resources & Acknowledgments
-* [Freedy Kearney](https://unsplash.com/@fredasem)
+* [Freddy Kearney](https://unsplash.com/@fredasem)
