@@ -11,4 +11,5 @@ My personal website
 
 ## Resources & Acknowledgments
 * [Freddy Kearney](https://unsplash.com/@fredasem)
+* [Clement Helardot](https://unsplash.com/@clemhlrdt)
 * [Google Fonts](https://fonts.google.com/)
