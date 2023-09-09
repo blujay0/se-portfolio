@@ -289,3 +289,13 @@ portfolio__item:focus .portfolio__img {
   opacity: .5;
 }
 
+/* Footer Styles */
+
+.footer {
+  background: #111;
+  color: var(--clr-accent);
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.footer a { color: inherit }
