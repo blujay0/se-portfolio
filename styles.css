@@ -218,7 +218,17 @@ intro__img {
   .about-me {
     display: grid;
     grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
   }
 
-  
+  .section__title--about,
+    grid-column: 1;
+  }
+
+  .about-me__img {
+    grid-area: img;
+  }
 }
