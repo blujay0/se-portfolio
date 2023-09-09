@@ -131,6 +131,10 @@ section__subtitle {
 
 /* header */
 
+.logo img {
+  
+}
+
 header {
   display: flex;
   justify-content: space-between;
