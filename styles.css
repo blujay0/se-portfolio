@@ -117,6 +117,12 @@ section__subtitle {
   margin-bottom: 1em;
 }
 
+.section__subtitle--work {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 2em;
+}
+
 /* Intro section */
 
 nav { display: none; }
@@ -250,3 +256,15 @@ intro__img {
   }
 }
 
+/* My Work */
+
+.my-work {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
