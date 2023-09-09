@@ -46,6 +46,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
+  position: relative;
 }
 
 section {
@@ -413,8 +414,12 @@ portfolio__item:focus .portfolio__img {
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5rem 0;
+  position: absolute;
+  right: 0;
+  left: 0;
   bottom: 0;
   width: 100vw;
+  height: 200px;
 }
 
 .footer a { 
@@ -436,20 +441,24 @@ portfolio__item:focus .portfolio__img {
   text-decoration: underline;
 }
 
+.footer p {
+  margin-top: 10px;
+}
+
 .social-list {
   list-style:none;
   display: flex;
   justify-content: center;
-  margin: 2em 0;
+  margin: 0;
   padding: 0;
 }
 
 .social-list__item {
-  margin: 0 .5em;
+  margin: 0 1em;
 }
 
 .social-list__link {
-  padding: .5em;
+  padding: 0;
 }
 
 /* Individual portfolio item styles */
