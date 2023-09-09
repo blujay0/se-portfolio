@@ -177,7 +177,7 @@ header {
 }
 
 .nav-toggle {
-  padding: .25em;
+  padding: .5em;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -219,7 +219,7 @@ header {
   width: 2em;
   height: 3px;
   border-radius: 1em;
-  transition: tranform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
 }
 
 .hamburger::before,
