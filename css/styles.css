@@ -289,6 +289,7 @@ intro__img {
 .my-services {
   background-color: var(--clr-dark);
   background-image: url(images/laptop-code-650x426.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.86;
   background-blend-mode: multiply;
@@ -461,9 +462,9 @@ portfolio__item:focus .portfolio__img {
   text-align: center;
   padding: 2.5rem 0;
   position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
   width: 100vw;
   height: 200px;
 }
