@@ -401,6 +401,17 @@ intro__img {
   display: none;
 }
 
+.overlay .shields {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.overlay .shields .shield {
+  margin: auto;
+  border-radius: 15px;
+}
+
 .portfolio__item:hover .overlay {
   display: block;
   opacity: 1; /* Make the overlay fully visible on hover */
