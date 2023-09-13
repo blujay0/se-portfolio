@@ -60,9 +60,11 @@ img {
 
 strong { font-weight: var(--fw-bold); }
 
+/* outline that shows up around the hamburger icon */
 :focus {
   outline: 3px solid var(--clr-accent);
   outline-offset: 3px;
+  border-radius: 5px;
 }
 
 /* Buttons */
