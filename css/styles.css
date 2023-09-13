@@ -392,31 +392,13 @@ intro__img {
   position: relative; /* creates a stacking context */
 }
 
-.portfolio__img {
-  transition: 
-    transform 750ms cubic-bezier(.5, 0, .5, 1),
-    opacity 250ms linear;
-    background-color: white;
-}
-
 .portfolio__item:focus {
   position: relative;
   z-index: 2;
 }
 
 .overlay {
-  display: none; /* Hide the overlay by default */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 10px;
-  font-size: 1.5rem;
-  text-align: center;
-  z-index: 1;
-  transition: opacity 250ms cubic-bezier(.5, 0, .5, 1); /* Add transition property */
+  display: none;
 }
 
 .portfolio__item:hover .overlay {
@@ -426,10 +408,12 @@ intro__img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(.5, 0, .5, 0.75);
   color: white;
-  padding: 10px;
-  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  padding: 0;
+  font-size: 3rem;
   text-align: center;
   z-index: 1;
 }
