@@ -395,6 +395,7 @@ intro__img {
   transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
+    background-color: white;
 }
 
 .portfolio__item:focus {
