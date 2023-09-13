@@ -279,6 +279,7 @@ intro__img {
   }
 
   .section__subtitle--intro {
+    color: var(--clr-light);
     align-self: start;
     grid-column: -1 / 1;
     grid-row: 2;
