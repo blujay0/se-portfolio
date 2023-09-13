@@ -389,6 +389,7 @@ intro__img {
 .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
+  position: relative; /* creates a stacking context */
 }
 
 .portfolio__img {
@@ -401,6 +402,41 @@ intro__img {
 .portfolio__item:focus {
   position: relative;
   z-index: 2;
+}
+
+.overlay {
+  display: none; /* Hide the overlay by default */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 1;
+  transition: opacity 250ms cubic-bezier(.5, 0, .5, 1); /* Add transition property */
+}
+
+.portfolio__item:hover .overlay {
+  display: block;
+  opacity: 1; /* Make the overlay fully visible on hover */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.portfolio__img {
+  transition: transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
+  background-color: white;
 }
 
 .portfolio__img:hover,
