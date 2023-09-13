@@ -13,7 +13,7 @@
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-accent: #32adfa;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -75,7 +75,7 @@ strong { font-weight: var(--fw-bold); }
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
-  font-size: .8rem;
+  font-size: .9rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
@@ -111,6 +111,10 @@ h3 { font-size: var(--fs-h3) }
   display: block;
 }
 
+.section__title--work {
+  color: white;
+}
+
 section__subtitle {
   margin: 0;
   font-size: var(--fs-h3);
@@ -125,7 +129,7 @@ section__subtitle {
 }
 
 .section__subtitle--work {
-  color: var(--clr-accent);
+  color: white;
   font-weight: var(--fw-bold);
   margin-bottom: 2em;
 }
@@ -298,7 +302,7 @@ intro__img {
 }
 
 .section__title--services {
-  color: var(--clr-accent);
+  color: white;
   position: relative;
 }
 
@@ -491,6 +495,8 @@ portfolio__item:focus .portfolio__img {
 .footer p {
   margin-top: 10px;
   font-size: 1.1rem;
+  color: white;
+  font-weight: 700;
 }
 
 .social-list {
