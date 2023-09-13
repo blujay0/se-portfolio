@@ -141,6 +141,10 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  background-color: var(--clr-light);
+  position: fixed;
+  width: 100%;
+  z-index: 100; /* necessary to keep on top of all other styles */
 }
 
 .logo {
@@ -155,7 +159,6 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 100;
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
