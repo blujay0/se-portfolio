@@ -402,14 +402,26 @@ intro__img {
 }
 
 .overlay .shields {
-  border-radius: 10px;
   display: flex;
-  flex-direction: row;
+  align-content: flex-start;
+  justify-content: center;
+  row-gap: .25em;
+  column-gap: .25em;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: 0; /* necessary to remove <ul> left indent */
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0; /* necessary to remove <ul> left indent */
 }
 
 .overlay .shields .shield {
-  margin: auto;
+  margin: 0;
   border-radius: 15px;
+}
+
+.shields .shield img {
+  border-radius: 10px;
 }
 
 .portfolio__item:hover .overlay {
