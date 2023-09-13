@@ -141,7 +141,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  background-color: var(--clr-light);
+  background-color: var(--clr-dark);
   position: fixed;
   width: 100%;
   z-index: 100; /* necessary to keep on top of all other styles */
