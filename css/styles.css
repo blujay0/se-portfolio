@@ -352,9 +352,16 @@ intro__img {
   border: .2rem solid var(--clr-dark);
   background-image: linear-gradient(to bottom right, #000000, #020024, #003d49, #00d4ff);
   border-radius: 10px;
+  box-shadow: 5px 5px 2px 1px rgba(2, 2, 115, 0.256);
   color: var(--clr-light);
   padding: 5px;
+  margin: 2px;
   font-weight: var(--fw-bold);
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 @media (min-width: 800px) {
