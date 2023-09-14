@@ -533,11 +533,12 @@ intro__img {
   background-color: var(--clr-light);
 }
 
-.portfolio__img:hover,
+/* zooms in the image on hover and changes its opacity*/
+/* .portfolio__img:hover,
 portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   opacity: .5;
-}
+} */
 
 /* Footer Styles */
 
