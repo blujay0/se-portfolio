@@ -381,7 +381,13 @@ intro__img {
   margin: 0 auto;
 }
 
+.my-skills__img {
+  box-shadow: var(--bs);
+  margin-top: 15px;
+}
+
 @media (min-width: 600px) {
+  /* this is what gets the image to be positioned to the right of the subtitle bar */
   .about-me {
     display: grid;
     grid-template-columns: 1fr 200px;
@@ -392,12 +398,21 @@ intro__img {
     grid-column-gap: 2em;
   }
 
-  .section__title--about {
+  .section__title--about,
+  .section__title--skills
+   {
     grid-column: title;
   }
 
-  .section__title--skills {
-    grid-column: title;
+  /* this is what gets the image to be positioned to the right of the subtitle bar */
+  .my-skills {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
   }
 
   .skills {
@@ -416,7 +431,8 @@ intro__img {
     padding: 5px;
   }
 
-  .section__subtitle--about {
+  .section__subtitle--about,
+  .section__subtitle--skills {
     color: var(--clr-light);
     grid-column: 1 / -1;
     grid-row: 2;
@@ -428,6 +444,12 @@ intro__img {
   }
 
   .about-me__img {
+    grid-area: img;
+    position: relative;
+    z-index: 1;
+  }
+
+  .my-skills__img {
     grid-area: img;
     position: relative;
     z-index: 1;
