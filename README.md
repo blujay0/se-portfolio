@@ -8,6 +8,7 @@ My personal website
 * CSS Grid
 * Responsive Design
 * Google Fonts API
+* DOM Manipulation
 
 ## Resources & Acknowledgments
 * [Freddy Kearney](https://unsplash.com/@fredasem)

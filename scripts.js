@@ -10,3 +10,7 @@ navLinks.forEach(link => {
     document.body.classList.remove('nav-open');
   })
 })
+
+// get date
+let year = new Date().getFullYear();
+document.getElementById("year").innerHTML = year;
