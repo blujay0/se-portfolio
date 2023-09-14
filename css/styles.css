@@ -522,6 +522,10 @@ portfolio__item:focus .portfolio__img {
   margin: 0 1em;
 }
 
+.social-list__item img {
+  border-radius: 5px;
+}
+
 .social-list__link {
   padding: 0;
 }
