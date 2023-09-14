@@ -345,7 +345,7 @@ intro__img {
   border-radius: 10px;
   color: var(--clr-light);
   padding: 5px;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-reg);
 }
 
 @media (min-width: 800px) {
