@@ -331,6 +331,23 @@ intro__img {
   margin: 0 auto;
 }
 
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  column-gap: 5px;
+  align-items: center;
+}
+
+.skills .skill {
+  background-color: var(--clr-dark);
+  border-radius: 10px;
+  color: var(--clr-light);
+  padding: 5px;
+  font-weight: var(--fw-bold);
+}
+
 @media (min-width: 800px) {
   .services {
     display: flex;
@@ -351,6 +368,7 @@ intro__img {
 
 .about-me__img {
   box-shadow: var(--bs);
+  margin-top: 15px;
 }
 
 @media (min-width: 600px) {
@@ -366,6 +384,22 @@ intro__img {
 
   .section__title--about {
     grid-column: title;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 5px;
+    align-items: center;
+  }
+
+  .skills .skill {
+    background-color: var(--clr-dark);
+    border-radius: 10px;
+    color: var(--clr-light);
+    padding: 5px;
   }
 
   section__subtitle--about {
