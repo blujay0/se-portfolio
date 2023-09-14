@@ -124,6 +124,7 @@ h3 { font-size: var(--fs-h3) }
 section__subtitle {
   margin: 0;
   font-size: var(--fs-h3);
+  
 }
 
 .section__subtitle--intro,
@@ -131,6 +132,7 @@ section__subtitle {
 .section__subtitle--skills {
   color: var(--clr-light);
   background: var(--clr-accent);
+  background-image: linear-gradient(to right, #09267a, #1b47c2, #012791, #022178, #0432b5, #2046b0, #043bd4, #94b0ff);
   padding: .25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
@@ -346,11 +348,12 @@ intro__img {
 }
 
 .skills .skill {
-  background-color: var(--clr-dark);
+  border: .2rem solid var(--clr-dark);
+  background-image: linear-gradient(to bottom right, #000000, #020024, #003d49, #00d4ff);
   border-radius: 10px;
   color: var(--clr-light);
   padding: 5px;
-  font-weight: var(--fw-reg);
+  font-weight: var(--fw-bold);
 }
 
 @media (min-width: 800px) {
@@ -425,9 +428,11 @@ intro__img {
   }
 
   .skills .skill {
-    background-color: var(--clr-dark);
+    border: .2rem solid var(--clr-dark);
+    background-image: linear-gradient(to bottom right, #000000, #020024, #003d49, #00d4ff);
     border-radius: 10px;
     color: var(--clr-light);
+    font-weight: var(--fw-bold);
     padding: 5px;
   }
 
