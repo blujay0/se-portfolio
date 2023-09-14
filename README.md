@@ -9,6 +9,7 @@ My personal website
 * Responsive Design
 * Google Fonts API
 * DOM Manipulation
+* Netlify Deployment
 
 ## Resources & Acknowledgments
 * [Freddy Kearney](https://unsplash.com/@fredasem)
@@ -17,3 +18,4 @@ My personal website
 * [Google Fonts](https://fonts.google.com/)
 * [ICONS8](https://icons8.com/)
 * [unDraw](https://undraw.co/)
+* [Netlify](https://www.netlify.com/)
