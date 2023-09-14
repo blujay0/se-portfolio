@@ -132,7 +132,7 @@ section__subtitle {
 .section__subtitle--skills {
   color: var(--clr-light);
   background: var(--clr-accent);
-  background-image: linear-gradient(to right, #09267a, #1b47c2, #012791, #022178, #0432b5, #2046b0, #043bd4, #94b0ff);
+  background-image: linear-gradient(to right, #5d00ff, #9254ff, #84a3f5);
   padding: .25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
