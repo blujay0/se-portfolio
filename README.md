@@ -12,9 +12,6 @@ My personal website
 * Netlify Deployment
 
 ## Resources & Acknowledgments
-* [Freddy Kearney](https://unsplash.com/@fredasem)
-* [Clement Helardot](https://unsplash.com/@clemhlrdt)
-* [Mihai Lazăr](https://unsplash.com/@mihai14)
 * [Google Fonts](https://fonts.google.com/)
 * [ICONS8](https://icons8.com/)
 * [unDraw](https://undraw.co/)
