@@ -8,6 +8,7 @@ Welcome to my personal website! Learn about me, reach out, or see my work.
 .
 ├── LICENSE.md
 ├── README.md
+├── scripts.js
 ├── css
 |   ├── images
 |   ├── styles.css
