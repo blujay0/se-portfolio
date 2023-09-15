@@ -25,6 +25,7 @@ Welcome to my personal website! Learn about me, reach out, or see my work.
 * CSS
 * Flexbox
 * CSS Grid
+* JavaScript
 * Responsive & Interactive Design
 * Google Fonts API
 * DOM Manipulation
