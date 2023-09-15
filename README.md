@@ -1,5 +1,5 @@
 # Personal Website
-Welcome to my personal website where folks can learn about me, reach out to me, and see my work!
+Welcome to my personal website! Learn about me, reach out, or see my work.
 
 <img src="css/images/website-home.png" width="800" alt="screenshot of the home page">
 
