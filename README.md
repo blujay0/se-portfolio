@@ -3,7 +3,7 @@ Welcome to my personal website! Learn about me, reach out, and/or see my work.
 
 <img src="css/images/website-home.png" width="800" alt="screenshot of the home page">
 
-## Filesystem
+## File Structure
 ```
 .
 ├── LICENSE.md
