@@ -12,7 +12,7 @@
   --fw-bold: 900;
 
   --clr-light: #fff;
-  --clr-dark: #303030;
+  --clr-dark: #111;
   --clr-accent: #32adfa;
 
   --fs-h1: 3rem;
@@ -100,6 +100,8 @@ strong { font-weight: var(--fw-bold); }
   width: 4rem;
   height: 4rem;
   display: flex;
+  position: absolute;
+  z-index: 2;
   justify-content: center;
   align-items: center;
   /* box-shadow: X-offset | Y-offset | blur radius | spread radius | color */
@@ -194,6 +196,29 @@ header {
 
 .logo {
   max-width: 100px;
+}
+
+.blink-class {
+  background-color: #fff;
+}
+
+.blink-class {
+  background-color: white;
+  display: inline-block;
+  width: 10px;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  25% {
+    opacity: 0.05;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.05;
+  }
 }
 
 .nav {
@@ -591,7 +616,7 @@ portfolio__item:focus .portfolio__img {
 /* Footer Styles */
 
 .footer {
-  background: #111;
+  background: var(--clr-dark);
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5rem 0;
