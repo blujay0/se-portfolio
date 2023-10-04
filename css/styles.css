@@ -97,22 +97,27 @@ strong { font-weight: var(--fw-bold); }
   background-color: #6fd6ac;
   border-radius: 50%;
   margin-bottom: 1rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   top: 80%;
-  left: 80%;
+  left: 85%;
   display: flex;
   position: absolute;
   z-index: 2;
   justify-content: center;
   align-items: center;
   /* box-shadow: X-offset | Y-offset | blur radius | spread radius | color */
-  box-shadow: -5px 5px 1rem 1px #003d49;
+  box-shadow: 0 5px 1rem 1px #003d49;
 }
 
 .to-top-btn:hover {
   cursor: pointer;
   animation: pulse 2s infinite;
+}
+
+.to-top-btn img {
+  height: 2rem;
+  width: 2rem;
 }
 
 @keyframes pulse {
