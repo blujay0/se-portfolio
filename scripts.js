@@ -1,6 +1,6 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
-const toTop = document.querySelectorAll('.to-top-btn');
+const toTop = document.querySelector('.to-top-btn'); // using querySelectorAll will not work
 
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
