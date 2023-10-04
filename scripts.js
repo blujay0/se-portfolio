@@ -1,6 +1,5 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
-const logoImg = document.getElementById('#logo-img');
 const toTop = document.querySelectorAll('.to-top-btn');
 
 navToggle.addEventListener('click', () => {
@@ -13,15 +12,13 @@ navLinks.forEach(link => {
   })
 })
 
+toTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+})
+
 // get date
 let year = new Date().getFullYear();
 document.getElementById("year").innerHTML = year;
-
-logoImg.addEventListener('click', () => {
-  if (window.location.pathname === '/' || '/#' || 'index.html') {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  }
-})
