@@ -94,11 +94,13 @@ strong { font-weight: var(--fw-bold); }
 }
 
 .to-top-btn {
-  background-color: yellow;
+  background-color: #6fd6ac;
   border-radius: 50%;
   margin-bottom: 1rem;
   width: 4rem;
   height: 4rem;
+  top: 80%;
+  left: 80%;
   display: flex;
   position: absolute;
   z-index: 2;
