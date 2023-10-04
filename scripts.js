@@ -1,24 +1,39 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav__link');
-const toTop = document.querySelector('.to-top-btn'); // using querySelectorAll will not work
+/*
+By wrapping the code in a DOMContentLoaded event listener, you ensure that the JavaScript code will only execute after all elements in the DOM, including to-top-btn--home, have been fully loaded.
+*/
 
-navToggle.addEventListener('click', () => {
-  document.body.classList.toggle('nav-open');
-});
+document.addEventListener('DOMContentLoaded', function () {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelectorAll('.nav__link');
+  const toTop = document.querySelector('.to-top-btn');
+  const toTopHome = document.querySelector('.to-top-btn--home');
 
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    document.body.classList.remove('nav-open');
-  })
-})
-
-toTop.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
+  navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
   });
-})
 
-// get date
-let year = new Date().getFullYear();
-document.getElementById("year").innerHTML = year;
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      document.body.classList.remove('nav-open');
+    });
+  });
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+
+  if (toTop) {
+    toTop.addEventListener('click', scrollToTop);
+  }
+
+  if (toTopHome) {
+    toTopHome.addEventListener('click', scrollToTop);
+  };
+
+  // get date
+  let year = new Date().getFullYear();
+  document.getElementById("year").innerHTML = year;
+});
