@@ -1,7 +1,7 @@
 # Personal Website
 Welcome to my personal website! Learn about me, reach out, and/or see my work.
 
-<img src="css/images/website-home.png" width="800" alt="screenshot of the home page">
+<img src="css/images/personal-website-demo.gif" width="800" alt="screenshot of the home page">
 
 ## File Structure
 ```
