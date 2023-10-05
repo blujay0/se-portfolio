@@ -99,10 +99,11 @@ strong { font-weight: var(--fw-bold); }
   margin-bottom: 1rem;
   width: 3.5rem;
   height: 3.5rem;
-  top: 80%;
-  left: 85%;
+  top: 90%;
+  left: 90%;
   display: flex;
-  position: absolute;
+  /* position: absolute */
+  position: fixed;
   z-index: 2;
   justify-content: center;
   align-items: center;
@@ -126,10 +127,11 @@ strong { font-weight: var(--fw-bold); }
   margin-bottom: 1rem;
   width: 3.5rem;
   height: 3.5rem;
-  top: 19%;
-  left: 85%;
+  top: 90%;
+  left: 90%;
   display: flex;
-  position: absolute;
+  /* position: absolute */
+  position: fixed;
   z-index: 2;
   justify-content: center;
   align-items: center;
@@ -240,8 +242,8 @@ header {
 .blink-class {
   background-color: #fff;
   width: 3px;
-  height: 18px;
-  margin-top: 5px;
+  height: 20px;
+  margin-top: 2.5px;
   animation: blink 0.75s linear infinite;
 }
 
