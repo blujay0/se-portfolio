@@ -636,11 +636,11 @@ intro__img {
 
 .source-demo-container button:hover {
   cursor: pointer;
-  transform: scale(1.25);
+  transform: scale(1.15);
 }
 
 .intro {
-  padding-bottom: 0;
+  padding-bottom: 5rem;
 }
 
 .project-techs-heading {
