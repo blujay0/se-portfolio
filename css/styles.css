@@ -605,15 +605,13 @@ intro__img {
 }
 
 .portfolio__item .portfolio__img {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   /* change bg color of grid */
   background-color: #fff;
 }
 
 .overlay {
-  display: none;
-  /* overlay covers the entire grid */
   height: 100%;
   width: 100%;
 }
@@ -806,4 +804,29 @@ portfolio__item:focus .portfolio__img {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 650px) {
+  /* style + position to-top-btn for project pages */
+  .to-top-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    top: 90%;
+    left: 90%;
+  }
+
+  /* style + position to-top-btn for home page */
+  .to-top-btn {
+    width: 3rem;
+    height: 3rem;
+    top: 90%;
+    left: 80%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  /* remove overlay badges when out of space */
+  .portfolio__item .overlay .shields {
+    display: none;
+  }
 }
