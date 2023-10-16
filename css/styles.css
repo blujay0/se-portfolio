@@ -645,6 +645,22 @@ intro__img {
   font-size: 1rem;
 }
 
+/* individual project page */
+
+#project-1-svg {
+  width: 15rem;
+  height: 15rem;
+}
+
+.title-svg {
+  display: flex;
+  align-items: center;
+}
+
+.title-svg .section__title section__title--intro {
+  text-align: right;
+}
+
 .intro {
   padding-bottom: 5rem;
 }
