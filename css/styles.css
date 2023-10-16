@@ -568,7 +568,6 @@ intro__img {
 }
 
 /* My Work */
-
 .my-work {
   background-color: #303030;
   color: var(--clr-light);
@@ -620,6 +619,16 @@ intro__img {
 
 .shields .shield img {
   border-radius: 10px;
+}
+
+.intro {
+  padding-bottom: 0;
+}
+
+.portfolio__item .overlay .project-snippet {
+  font-size: 16px;
+  font-weight: var(--fw-reg);
+  margin-bottom: 1rem;
 }
 
 .portfolio__item:hover .overlay {
