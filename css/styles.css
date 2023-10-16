@@ -640,6 +640,10 @@ intro__img {
   border-radius: 10px;
 }
 
+.source-demo-container {
+  margin: 0;f
+}
+
 .source-demo-container form {
   display: inline;
   font-size: 1rem;
@@ -685,6 +689,10 @@ intro__img {
   cursor: pointer;
   opacity: 0.95;
   transform: scale(1.15);
+}
+
+.portfolio__item .overlay h2 {
+  margin: 0.5rem 0;
 }
 
 .portfolio__item .overlay .project-snippet {
