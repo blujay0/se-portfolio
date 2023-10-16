@@ -606,9 +606,9 @@ intro__img {
 
 .overlay {
   display: none;
-  /* if you want to make the overlay cover the entire grid */
-  /* height: 100%;
-  width: 100%; */
+  /* overlay covers the entire grid */
+  height: 100%;
+  width: 100%;
 }
 
 .overlay .shields {
