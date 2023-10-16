@@ -608,7 +608,7 @@ intro__img {
   list-style-type: none;
   margin-left: 0; /* necessary to remove <ul> left indent */
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   padding: 0; /* necessary to remove <ul> left indent */
 }
 
@@ -619,6 +619,24 @@ intro__img {
 
 .shields .shield img {
   border-radius: 10px;
+}
+
+.source-demo-container form {
+  display: inline;
+  font-size: 1rem;
+}
+
+.source-demo-container button {
+  margin: 0 1rem 1rem 1rem;
+  padding: 0.5rem 0.5rem;
+  background-color: #6C63FF;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.source-demo-container button:hover {
+  cursor: pointer;
+  transform: scale(1.25);
 }
 
 .intro {
