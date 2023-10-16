@@ -134,7 +134,7 @@ strong { font-weight: var(--fw-bold); }
   width: 2rem;
 }
 
-.to-top-btn--home {
+.to-top-btn {
   background-color: #6fd6ac;
   border-radius: 50%;
   margin-bottom: 1rem;
@@ -152,12 +152,12 @@ strong { font-weight: var(--fw-bold); }
   box-shadow: 0 5px 1rem 1px #003d49;
 }
 
-.to-top-btn--home:hover {
+.to-top-btn:hover {
   cursor: pointer;
   animation: pulse 2s infinite;
 }
 
-.to-top-btn--home img {
+.to-top-btn img {
   height: 2rem;
   width: 2rem;
 }
@@ -807,20 +807,12 @@ portfolio__item:focus .portfolio__img {
 }
 
 @media screen and (max-width: 650px) {
-  /* style + position to-top-btn for project pages */
-  .to-top-btn {
-    width: 3.5rem;
-    height: 3.5rem;
-    top: 90%;
-    left: 90%;
-  }
-
-  /* style + position to-top-btn for home page */
+  /* style + position to-top-btn for pages */
   .to-top-btn {
     width: 3rem;
     height: 3rem;
-    top: 90%;
-    left: 80%;
+    top: 85%;
+    left: 78%;
   }
 }
 
