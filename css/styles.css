@@ -594,14 +594,20 @@ intro__img {
 }
 
 .portfolio__item {
-  background: var(--clr-accent);
   overflow: hidden;
   position: relative; /* creates a stacking context */
+  display: flex;
 }
 
 .portfolio__item:focus {
   position: relative;
   z-index: 2;
+}
+
+.portfolio__item .portfolio__img {
+  object-fit: contain;
+  /* change bg color of grid */
+  background-color: #fff;
 }
 
 .overlay {
