@@ -93,6 +93,19 @@ strong { font-weight: var(--fw-bold); }
   transform: scale(1.3);
 }
 
+.source-demo-container button {
+  margin: 0 1rem 1rem 1rem;
+  padding: 0.5rem 0.5rem;
+  background-color: #51a336;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.source-demo-container button:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
 .to-top-btn {
   background-color: #6fd6ac;
   border-radius: 50%;
@@ -624,19 +637,6 @@ intro__img {
 .source-demo-container form {
   display: inline;
   font-size: 1rem;
-}
-
-.source-demo-container button {
-  margin: 0 1rem 1rem 1rem;
-  padding: 0.5rem 0.5rem;
-  background-color: #6C63FF;
-  color: #fff;
-  border-radius: 5px;
-}
-
-.source-demo-container button:hover {
-  cursor: pointer;
-  transform: scale(1.15);
 }
 
 .intro {
