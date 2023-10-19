@@ -18,7 +18,6 @@ Welcome to my personal website! Learn about me, reach out, and/or have a gander 
 ├── project-2.html
 ├── project-3.html
 ├── project-4.html
-├── 
 ```
 
 ## Features
