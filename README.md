@@ -1,5 +1,5 @@
 # Personal Website
-Welcome to my personal website! Learn about me, reach out, and/or see my work.
+Welcome to my personal website! Learn about me, reach out, and/or have a gander at my work.
 
 <img src="css/images/personal-website-demo.gif" width="800" alt="screenshot of the home page">
 
@@ -10,14 +10,15 @@ Welcome to my personal website! Learn about me, reach out, and/or see my work.
 ├── README.md
 ├── scripts.js
 ├── css
-|   ├── images
+|   ├── media
+|   |   ├── ...
 |   ├── styles.css
 ├── index.html
 ├── project-1.html
 ├── project-2.html
 ├── project-3.html
 ├── project-4.html
-
+├── 
 ```
 
 ## Features
