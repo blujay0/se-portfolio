@@ -27,6 +27,8 @@ Welcome to my personal website! Learn about me, reach out, and/or have a gander 
 * CSS Grid
 * JavaScript
 * Responsive & Interactive Design
+* Accessbility
+* SEO Optimization
 * Google Fonts API
 * DOM Manipulation
 * Netlify Deployment
