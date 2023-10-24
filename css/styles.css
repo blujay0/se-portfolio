@@ -605,10 +605,9 @@ intro__img {
 }
 
 .portfolio__item .portfolio__img {
-  /* width: 100%;
-  height: 100%; */
   /* change bg color of grid */
   background-color: #fff;
+  
 }
 
 .overlay {
