@@ -53,6 +53,12 @@ section {
   padding: 5em 2em;
 }
 
+.skills {
+  border: solid thin;
+  padding: 15px;
+  border-radius: 8px;
+}
+
 .my-skills {
   padding-top: .25em;
 }
