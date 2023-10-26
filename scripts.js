@@ -1,13 +1,10 @@
-/*
-By wrapping the code in a DOMContentLoaded event listener, you ensure that the JavaScript code will only execute after all elements in the DOM, including to-top-btn--home, have been fully loaded.
-*/
-// Define the sendEmail function
-function sendEmail() {
-  // Your code for sending the email
+// Define the sendEmail function with contactForm as a parameter
+function sendEmail(contactForm) {
+  // send email
   const tempParams = {
-    user_name: document.getElementById("user_name").value,
-    user_email: document.getElementById("user_email").value,
-    user_message: document.getElementById("user_message").value,
+    user_name: contactForm.querySelector("#user_name").value,
+    user_email: contactForm.querySelector("#user_email").value,
+    user_message: contactForm.querySelector("#user_message").value,
   };
 
   emailjs.send("service_b3pbodx", "template_6vpott8", tempParams)
@@ -15,16 +12,41 @@ function sendEmail() {
       console.log('SUCCESS!', response.status, response.text);
 
       // Clear the form fields
-      document.getElementById("user_name").value = '';
-      document.getElementById("user_email").value = '';
-      document.getElementById("user_message").value = '';
+      contactForm.querySelector("#user_name").value = '';
+      contactForm.querySelector("#user_email").value = '';
+      contactForm.querySelector("#user_message").value = '';
+
+      // Create a success message element
+      const successMessage = document.createElement('p');
+      successMessage.textContent = "✔️ Message sent successfully!";
+      successMessage.className = 'success-message';
+
+      // Create a container for messages
+      const messageContainer = document.createElement('div');
+      messageContainer.className = 'message-container';
+
+      // Check if any message container already exists and remove it before adding the new one
+      const existingMessageContainer = contactForm.querySelector('.message-container');
+      if (existingMessageContainer) {
+        contactForm.removeChild(existingMessageContainer);
+      }
+
+      // Add the success message to the message container
+      messageContainer.appendChild(successMessage);
+
+      // Add the message container to the form container
+      contactForm.appendChild(messageContainer);
+
+      // Remove message container after a certain time (e.g., 5 seconds)
+      setTimeout(() => {
+        contactForm.removeChild(messageContainer);
+      }, 5000);
     }, 
     function(error) {
       console.log('FAILED...', error);
     });
 }
 
-// The rest of your code
 document.addEventListener('DOMContentLoaded', function () {
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelectorAll('.nav__link');
@@ -62,18 +84,17 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById("year").innerHTML = year;
 
   // Add an event listener to the submit button
-  const contactBtn = document.getElementById("contact-btn");
+  const contactBtn = contactForm.querySelector("#contact-btn");
 
   contactBtn.addEventListener('click', function (e) {
     e.preventDefault(); // Prevent the default form submission behavior
 
     // Check if the form is valid
     if (contactForm.checkValidity()) {
-      // If the form is valid, call the sendEmail function
-      sendEmail();
+      // If form is valid, call the sendEmail function with contactForm as a parameter
+      sendEmail(contactForm);
     } else {
-      // If the form is not valid, you can display an error message or take any other appropriate action.
-      // For example, you can add an error message to your HTML to inform the user.
+      // if form is not valid, display an error message
       // Create an element for the error message and add it to the form container.
       const errorMessage = document.createElement('p');
       errorMessage.textContent = "⚠️ Please fill out all required fields.";
@@ -89,4 +110,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
