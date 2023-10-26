@@ -26,7 +26,6 @@ Welcome to my personal website! Learn about me, reach out, and/or have a gander 
 * Flexbox
 * CSS Grid
 * JavaScript
-* JavaScript Module
 * Responsive & Interactive Design
 * Accessbility
 * SEO Optimization
