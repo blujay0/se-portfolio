@@ -361,17 +361,22 @@
 
   <!-- Contact Form -->
   <section id="contact-section">
-    <div>
+    <h2 class="section__title section__title--contact">Get In Touch</h2>
+
+    <div id="contact-container">
       <form id="contact-form">
-        <label for="user_name">Name</label>
-        <input type="text" name="user_name" id="user_name">
-        
-        <label for="user_email">Email</label>
-        <input type="email" name="user_email" id="user_email">
+        <div id="name-email">
+          <label for="user_name">Name</label>
+          <input type="text" name="user_name" id="user_name" placeholder="your name here..." required>
+          
+          <label for="user_email">Email</label>
+          <input type="email" name="user_email" id="user_email" placeholder="your email here..." required>
+        </div>
 
-        <label for="user_message">Message</label>
-        <textarea name="user_message" id="user_message"></textarea>
-
+        <div id="message">
+          <label for="user_message">Message</label>
+          <textarea name="user_message" id="user_message" cols="25" rows="10" maxlength="500" placeholder="your message here..." required></textarea>
+        </div>
         <!-- change type to 'button' so page does not reload on submit -->
         <button onclick="sendEmail()" type="button" id="contact-btn">Send</button>
       </form>

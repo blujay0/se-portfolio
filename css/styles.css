@@ -729,14 +729,55 @@ portfolio__item:focus .portfolio__img {
 } */
 
 /* Contact Form Styles */
-#contact {
+#contact-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-#contact h1 {
-  font-family: var(--ff-primary);
+#contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 10px 5px 5px var(--clr-dark); */
+  /* border: solid thin; */
+  padding: 15px;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#name-email {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
+}
+
+#name-email input {
+  border-radius: 8px;
+  font-size: var(--fs-body);
+}
+
+#message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#message label {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
+}
+
+#message textarea {
+  border-radius: 8px;
+  font-size: var(--fs-body);
+  padding: 15px;
 }
 
 #contact-btn {
@@ -744,40 +785,10 @@ portfolio__item:focus .portfolio__img {
   font-size: var(--fs-h3);
   background-image: linear-gradient(to bottom right, #5d00ff, #9254ff, #84a3f5);
   color: var(--clr-light);
+  margin-top: 15px;
+  border-radius: 15px;
 }
 
-#contact input {
-  border-radius: 7px;
-}
-
-#contact label {
-  font-family: var(--ff-secondary);
-  font-size: var(--fs-h3)
-}
-
-#contact-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#name-email {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-
-#message {
-  margin-bottom: 15px;
-}
-
-#message label {
-  display: block;
-}
-
-#message textarea {
-  border-radius: 7px;
-}
 
 /* Footer Styles */
 
