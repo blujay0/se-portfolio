@@ -372,7 +372,8 @@
         <label for="user_message">Message</label>
         <textarea name="user_message" id="user_message"></textarea>
 
-        <button onclick="sendEmail()" type="submit" id="contact-btn">Send</button>
+        <!-- change type to 'button' so page does not reload on submit -->
+        <button onclick="sendEmail()" type="button" id="contact-btn">Send</button>
       </form>
     </div>
   </section>
@@ -412,7 +413,7 @@
     <p>&copy;&nbsp;2023 - <strong><span id="year"></span></strong>&nbsp;&nbsp;All rights reserved.</p>
   </footer>
 
-  <script type="text/javascript" src="scripts.js"></script>
+  <script src="scripts.js"></script>
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script>

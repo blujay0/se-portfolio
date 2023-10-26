@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // send contact form
-function sendEmail(params) {
+function sendEmail() {
   const tempParams = {
     user_name: document.getElementById("user_name").value,
     user_email: document.getElementById("user_email").value,
@@ -49,8 +49,9 @@ function sendEmail(params) {
 
   emailjs.send("service_b3pbodx", "template_6vpott8", tempParams)
     .then(function(response) {
-      alert('SUCCESS!', response.status, response.text);
-    }, function(error) {
+      console.log('SUCCESS!', response.status, response.text);
+    }, 
+    function(error) {
         console.log('FAILED...', error);
     });
 }
