@@ -789,6 +789,9 @@ portfolio__item:focus .portfolio__img {
   border-radius: 15px;
 }
 
+#contact-btn:hover {
+  cursor: pointer;
+}
 
 /* Footer Styles */
 
