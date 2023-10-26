@@ -746,6 +746,10 @@ portfolio__item:focus .portfolio__img {
   color: var(--clr-light);
 }
 
+#contact input {
+  border-radius: 7px;
+}
+
 #contact label {
   font-family: var(--ff-secondary);
   font-size: var(--fs-h3)
@@ -754,6 +758,7 @@ portfolio__item:focus .portfolio__img {
 #contact-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 #name-email {
@@ -768,6 +773,10 @@ portfolio__item:focus .portfolio__img {
 
 #message label {
   display: block;
+}
+
+#message textarea {
+  border-radius: 7px;
 }
 
 /* Footer Styles */
