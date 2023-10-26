@@ -11,6 +11,30 @@
   <link rel="icon" type="image/x-icon" href="css/media/favicon.ico">
 
   <title>Jay Lim | DEV</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    import { EMAILJS_PUBLIC_KEY } from 'config/api-key.js';
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init(EMAILJS_PUBLIC_KEY);
+    })();
+  </script>
+  <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // generate a five digit number for the contact_number variable
+              this.contact_number.value = Math.random() * 100000 | 0;
+              // these IDs from the previous steps
+              emailjs.sendForm('contact_service', 'contact_form', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                  });
+          });
+      }
+  </script>
 </head>
 
 <body>
@@ -38,7 +62,7 @@
 
   <!-- Introduction -->
   <section class="intro" id="home">
-    <h1 class="section__title section__title--intro">
+    <h1 class="section__title--intro">
       Hello there, I'm <strong>Jay</strong>
     </h1>
     <p class="section__subtitle section__subtitle--intro">software developer</p>
@@ -72,7 +96,7 @@
 
   <!-- My Services -->
   <section class="my-services" id="services">
-    <h2 class="section__title section__title--services">What I do</h2>
+    <h2 class="section__title--services">What I do</h2>
     <div class="services">
       <div class="service">
         <h3>UI / UX</h3>
@@ -112,7 +136,7 @@
 
   <!-- About Me -->
   <section class="about-me" id="about">
-    <h2 class="section__title section__title--about">Who I am</h2>
+    <h2 class="section__title--about">Who I am</h2>
     <p class="section__subtitle section__subtitle--about">A <strong>Software Developer</strong> interested in the intersection of <em>psychology</em>, <em>healthcare</em>, and <em>finance</em> with technology.</p> 
 
     <div class="about-me__body">
@@ -126,7 +150,7 @@
 
   <!-- My Skills -->
   <section class="my-skills" id="skills">
-    <h2 class="section__title section__title--skills">My Skills</h2>
+    <h2 class="section__title--skills">My Skills</h2>
     <p class="section__subtitle section__subtitle--skills"><strong>constantly learning</strong> new technologies!</p> 
 
     <div class="skills">
@@ -180,7 +204,7 @@
   <!-- My Work -->
 
   <section class="my-work" id="work">
-    <h2 class="section__title section__title--work">Portfolio</h2>
+    <h2 class="section__title--work">Portfolio</h2>
     <p class="section__subtitle section__subtitle--work">Click for more details!</p>
 
     <div class="portfolio">
@@ -359,8 +383,19 @@
     </div>
   </section>
 
+  <!-- Contact Form -->
   <section id="contact">
-    
+    <h2 class="section__title--contact">Get In Touch</h2>
+    <form id="contact-form">
+      <input type="hidden" name="contact_number">
+      <label>Name</label>
+      <input type="text" name="user_name">
+      <label>Email</label>
+      <input type="email" name="user_email">
+      <label>Message</label>
+      <textarea name="message" maxlength="500" cols="20" rows="4"></textarea>
+      <input id="contact-btn" type="submit" value="Send">
+    </form>
   </section>
 
   <!-- Footer -->
