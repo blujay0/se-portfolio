@@ -729,7 +729,7 @@ portfolio__item:focus .portfolio__img {
 } */
 
 /* Contact Form Styles */
-#contact-section {
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
