@@ -854,6 +854,22 @@ portfolio__item:focus .portfolio__img {
     top: 85%;
     left: 78%;
   }
+
+  #name-email {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #message textarea {
+    width: 15em;
+    height: 10em;
+  }
 }
 
 @media screen and (max-width: 475px) {
