@@ -37,4 +37,5 @@ Welcome to my personal website! Learn about me, reach out, and/or have a gander 
 * [Google Fonts](https://fonts.google.com/)
 * [ICONS8](https://icons8.com/)
 * [unDraw](https://undraw.co/)
+* [EmailJS](https://www.emailjs.com/)
 * [Netlify](https://www.netlify.com/)

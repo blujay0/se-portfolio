@@ -728,6 +728,68 @@ portfolio__item:focus .portfolio__img {
   opacity: .5;
 } */
 
+/* Contact Form Styles */
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 10px 5px 5px var(--clr-dark); */
+  /* border: solid thin; */
+  padding: 15px;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#name-email {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
+}
+
+#name-email input {
+  border-radius: 8px;
+  font-size: var(--fs-body);
+}
+
+#message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#message label {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
+}
+
+#message textarea {
+  border-radius: 8px;
+  font-size: var(--fs-body);
+  padding: 15px;
+}
+
+#contact-btn {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
+  background-image: linear-gradient(to bottom right, #5d00ff, #9254ff, #84a3f5);
+  color: var(--clr-light);
+  margin-top: 15px;
+  border-radius: 15px;
+}
+
+
 /* Footer Styles */
 
 .footer {
@@ -811,6 +873,12 @@ portfolio__item:focus .portfolio__img {
     height: 3rem;
     top: 85%;
     left: 78%;
+  }
+
+  #name-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
   }
 }
 

@@ -359,6 +359,30 @@
     </div>
   </section>
 
+  <!-- Contact Form -->
+  <section id="contact-section">
+    <h2 class="section__title section__title--contact">Get In Touch</h2>
+
+    <div id="contact-container">
+      <form id="contact-form">
+        <div id="name-email">
+          <label for="user_name">Name</label>
+          <input type="text" name="user_name" id="user_name" placeholder="your name here..." required>
+          
+          <label for="user_email">Email</label>
+          <input type="email" name="user_email" id="user_email" placeholder="your email here..." required>
+        </div>
+
+        <div id="message">
+          <label for="user_message">Message</label>
+          <textarea name="user_message" id="user_message" cols="25" rows="10" maxlength="500" placeholder="your message here..." required></textarea>
+        </div>
+        <!-- change type to 'button' so page does not reload on submit -->
+        <button type="submit" id="contact-btn">Send</button>
+      </form>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="to-top-btn">
@@ -395,5 +419,13 @@
   </footer>
 
   <script src="scripts.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("NsTC9WPcTHXnR0JQ1");
+    })();
+  </script>
 </body>
 </html>
