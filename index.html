@@ -11,30 +11,8 @@
   <link rel="icon" type="image/x-icon" href="css/media/favicon.ico">
 
   <title>Jay Lim | DEV</title>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    import { EMAILJS_PUBLIC_KEY } from 'config/api-key.js';
-    (function() {
-        // https://dashboard.emailjs.com/admin/account
-        emailjs.init(EMAILJS_PUBLIC_KEY);
-    })();
-  </script>
-  <script type="text/javascript">
-      window.onload = function() {
-          document.getElementById('contact-form').addEventListener('submit', function(event) {
-              event.preventDefault();
-              // generate a five digit number for the contact_number variable
-              this.contact_number.value = Math.random() * 100000 | 0;
-              // these IDs from the previous steps
-              emailjs.sendForm('contact_service', 'contact_form', this)
-                  .then(function() {
-                      console.log('SUCCESS!');
-                  }, function(error) {
-                      console.log('FAILED...', error);
-                  });
-          });
-      }
-  </script>
+
+
 </head>
 
 <body>
@@ -384,31 +362,13 @@
   </section>
 
   <!-- Contact Form -->
-  <section id="contact">
-    <h2 class="section__title section__title--contact">
-      Get In Touch
-    </h2>
-    <form id="contact-form">
-      <div id="contact-content">
-        <div id="name-email">
-          <div id="name">
-            <label>Name</label>
-            <input type="text" name="user_name">
-          </div>
-          <div id="email">
-            <label>Email</label>
-            <input type="email" name="user_email">
-          </div>
-        </div>
-
-        <div id="message">
-          <label>Message</label>
-          <textarea name="message" maxlength="500" cols="75" rows="10"></textarea>
-        </div>
-        <input id="contact-btn" type="submit" value="Send">
-      </div>
-
-    </form>
+  <section id="contact-section">
+    <div>
+      <input id="user_name" type="text" placeholder="your name" required>
+      <input id="user_email" type="email" placeholder="your email" required.
+      <textarea id="user_message" placeholder="mesage" required></textarea>
+      <button>Send</button>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -447,5 +407,13 @@
   </footer>
 
   <script src="scripts.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("YOUR_PUBLIC_KEY");
+    })();
+  </script>
 </body>
 </html>

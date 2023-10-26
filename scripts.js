@@ -37,3 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
   let year = new Date().getFullYear();
   document.getElementById("year").innerHTML = year;
 });
+
+// send contact form
+
+function sendEmail() {
+  const params = {
+    user_name: document.getElementById("user_name"),
+    user_email: document.getElementById("user_email"),
+    user_message: document.getElementById("user_message"),
+  }
+}
