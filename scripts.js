@@ -37,10 +37,10 @@ function sendEmail(contactForm) {
       // Add the message container to the form container
       contactForm.appendChild(messageContainer);
 
-      // Remove message container after a certain time (e.g., 5 seconds)
+      // Remove message container after 2 secs
       setTimeout(() => {
         contactForm.removeChild(messageContainer);
-      }, 5000);
+      }, 2000);
     }, 
     function(error) {
       console.log('FAILED...', error);
@@ -107,6 +107,14 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       contactForm.appendChild(errorMessage);
+
+      // remove error message after 2 secs
+      setTimeout(() => {
+        const errorMessageToRemove = contactForm.querySelector('.error-message');
+        if (errorMessageToRemove) {
+          contactForm.removeChild(errorMessageToRemove);
+        }
+      }, 2000);    
     }
   });
 });
