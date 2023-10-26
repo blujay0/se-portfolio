@@ -62,7 +62,7 @@
 
   <!-- Introduction -->
   <section class="intro" id="home">
-    <h1 class="section__title--intro">
+    <h1 class="section__title section__title--intro">
       Hello there, I'm <strong>Jay</strong>
     </h1>
     <p class="section__subtitle section__subtitle--intro">software developer</p>
@@ -96,7 +96,7 @@
 
   <!-- My Services -->
   <section class="my-services" id="services">
-    <h2 class="section__title--services">What I do</h2>
+    <h2 class="section__title section__title--services">What I do</h2>
     <div class="services">
       <div class="service">
         <h3>UI / UX</h3>
@@ -136,7 +136,7 @@
 
   <!-- About Me -->
   <section class="about-me" id="about">
-    <h2 class="section__title--about">Who I am</h2>
+    <h2 class="section__title section__title--about">Who I am</h2>
     <p class="section__subtitle section__subtitle--about">A <strong>Software Developer</strong> interested in the intersection of <em>psychology</em>, <em>healthcare</em>, and <em>finance</em> with technology.</p> 
 
     <div class="about-me__body">
@@ -150,7 +150,7 @@
 
   <!-- My Skills -->
   <section class="my-skills" id="skills">
-    <h2 class="section__title--skills">My Skills</h2>
+    <h2 class="section__title section__title--skills">My Skills</h2>
     <p class="section__subtitle section__subtitle--skills"><strong>constantly learning</strong> new technologies!</p> 
 
     <div class="skills">
@@ -204,7 +204,7 @@
   <!-- My Work -->
 
   <section class="my-work" id="work">
-    <h2 class="section__title--work">Portfolio</h2>
+    <h2 class="section__title section__title--work">Portfolio</h2>
     <p class="section__subtitle section__subtitle--work">Click for more details!</p>
 
     <div class="portfolio">
@@ -385,16 +385,29 @@
 
   <!-- Contact Form -->
   <section id="contact">
-    <h2 class="section__title--contact">Get In Touch</h2>
+    <h2 class="section__title section__title--contact">
+      Get In Touch
+    </h2>
     <form id="contact-form">
-      <input type="hidden" name="contact_number">
-      <label>Name</label>
-      <input type="text" name="user_name">
-      <label>Email</label>
-      <input type="email" name="user_email">
-      <label>Message</label>
-      <textarea name="message" maxlength="500" cols="20" rows="4"></textarea>
-      <input id="contact-btn" type="submit" value="Send">
+      <div id="contact-content">
+        <div id="name-email">
+          <div id="name">
+            <label>Name</label>
+            <input type="text" name="user_name">
+          </div>
+          <div id="email">
+            <label>Email</label>
+            <input type="email" name="user_email">
+          </div>
+        </div>
+
+        <div id="message">
+          <label>Message</label>
+          <textarea name="message" maxlength="500" cols="75" rows="10"></textarea>
+        </div>
+        <input id="contact-btn" type="submit" value="Send">
+      </div>
+
     </form>
   </section>
 

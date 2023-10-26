@@ -735,18 +735,39 @@ portfolio__item:focus .portfolio__img {
   align-items: center;
 }
 
-#contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#contact h1 {
+  font-family: var(--ff-primary);
 }
 
-#contact-form #contact-btn {
-  border-radius:10px;
-  padding: 5px 10px;
-  margin-top: 10px;
+#contact-btn {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
   background-image: linear-gradient(to bottom right, #5d00ff, #9254ff, #84a3f5);
   color: var(--clr-light);
+}
+
+#contact label {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3)
+}
+
+#contact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#name-email {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#message {
+  margin-bottom: 15px;
+}
+
+#message label {
+  display: block;
 }
 
 /* Footer Styles */
