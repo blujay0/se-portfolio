@@ -31,7 +31,7 @@ Welcome to my personal website! Learn about me, reach out, and/or have a gander 
 * SEO Optimization
 * Google Fonts API
 * DOM Manipulation
-* Netlify Deployment
+* Netlify deployment
 
 ## Resources & Acknowledgments
 * [Google Fonts](https://fonts.google.com/)
