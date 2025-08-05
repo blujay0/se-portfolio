@@ -1,4 +1,4 @@
-# Personal Website
+# [Personal Website](https://jay-lim-dev.netlify.app/)
 Welcome to my personal website! Learn about me, reach out, and/or have a gander at my work.
 
 <img src="css/media/personal-website-demo.gif" width="800" alt="screenshot of the home page">
